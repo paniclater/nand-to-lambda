@@ -1,10 +1,11 @@
 module VoltageXor where
-import Data.Semigroup
+import Data.Monoid
 import Voltage
 
 data Xor a = Xor Voltage deriving (Eq, Show)
 
-instance Semigroup (Xor a) where
-  (<>) (Xor Low) (Xor Low) = Xor Low
-  (<>) (Xor High) (Xor High) = Xor Low
-  (<>) _ _ = Xor High
+instance Monoid (Xor a) where
+  mempty = Xor Low
+  mappend (Xor Low) (Xor Low) = Xor Low
+  mappend (Xor High) (Xor High) = Xor Low
+  mappend _ _ = Xor High

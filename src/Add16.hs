@@ -1,7 +1,5 @@
 module Add16 where
 
-import Data.Monoid as M
-import Data.Semigroup as S
 import CombinatoryBoolean
 import Voltage
 import VoltageAnd
