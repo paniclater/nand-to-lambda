@@ -1,4 +1,4 @@
-module BinaryArithmetic where
+module Add16 where
 
 import Data.Monoid as M
 import Data.Semigroup as S
@@ -7,20 +7,8 @@ import Voltage
 import VoltageAnd
 import VoltageOr
 import VoltageXor
-
-halfAdder :: Voltage -> Voltage -> (Voltage, Voltage)
-halfAdder x y = (sum, carry)
-  where
-    Xor sum = Xor x S.<> Xor y
-    And carry = And x M.<> And y
-
---TODO: Implement as fold :)
-fullAdder :: Voltage -> Voltage -> Voltage -> (Voltage, Voltage)
-fullAdder x y z =
-  (sum2, (or' carry1 carry2))
-      where
-        (sum1, carry1) = halfAdder x y
-        (sum2, carry2) = halfAdder sum1 z
+import HalfAdder
+import FullAdder
 
 first = [High, High, High, Low, Low, High, Low, Low, Low, High]
 second = [High, Low, Low, Low, Low, Low, Low, Low, Low, Low ]
