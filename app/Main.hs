@@ -1,6 +1,4 @@
 module Main where
 
-import Lib
-
 main :: IO ()
-main = someFunc
+main = putStrLn "Let's talk hardware and haskell! Check out the src directory!"

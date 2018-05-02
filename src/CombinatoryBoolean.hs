@@ -7,13 +7,17 @@ import Data.Aviary.Birds
 (...) = blackbird
 
 not' :: Voltage -> Voltage
-not' x = undefined
+not' x = nand x x
 
 and' :: Voltage -> Voltage -> Voltage
-and' x y = undefined
+and' x y = not' (nand x y)
 
 and'' :: Voltage -> Voltage -> Voltage
-and'' = undefined
+and'' = not' ... nand
+
+or' :: Voltage -> Voltage -> Voltage
+or' Low Low = Low
+or' _ _ = High
 
 xor :: Voltage -> Voltage -> Voltage
 xor High High = Low
