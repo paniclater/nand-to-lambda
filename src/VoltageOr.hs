@@ -3,7 +3,7 @@ module VoltageOr where
 import Data.Monoid
 import Voltage
 
-data Or a = Or Voltage deriving (Show, Eq, Ord)
+data Or a = Or Voltage deriving (Show, Eq)
 
 instance Monoid (Or a) where
   mempty = Or Low

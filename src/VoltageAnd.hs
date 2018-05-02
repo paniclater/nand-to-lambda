@@ -2,7 +2,7 @@ module VoltageAnd where
 
 import Voltage
 
-data And a = And Voltage deriving (Show, Eq, Ord)
+data And a = And Voltage deriving (Show, Eq)
 
 instance Monoid (And a) where
   mempty = And High
