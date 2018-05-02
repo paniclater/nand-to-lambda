@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>From NAND to Lambda</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-josefine theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section class="stack" data-id="0c3465ec8d473a6612e76220b8833cfa"><section data-id="fc53a378c408194ecf3a7400fc461fb1"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 190px; height: auto;" data-block-id="ee9edea6081395229ce5b8904f4b0529"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Ryan Moore</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 288px;" data-block-id="2c141b19fe8e95942456d1a9ddd92a6a"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<h2>Engineer at MX</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 808px; left: 76px; top: 362px;" data-block-id="062f1143771927d15117be41cb8e9cec"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="1">
+<h2>Volunteer Teaching Refugees Java</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 808px; left: 76px; top: 436px;" data-block-id="1c3dd8a7272c95b2ca4851ed4a990b15"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="2">
+<h2>Musician</h2>
+</div></div></section><section data-id="9039087788770d29e3cdb93c5cf4d88f"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 125px; height: auto;" data-block-id="2ca0f205d9054899221095ee39fed16a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>From Nand</h1>
+
+<h1>To Lambda</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 331px; height: auto;" data-block-id="d7a5ad5d11ed11048db3600b97621587"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; text-align: center;">
+<h2>Foundational Computing</h2>
+
+<h2>Through</h2>
+
+<h2>Functional Principles</h2>
+</div></div></section><section data-id="2c20af86914d60fb57b03d41e625a5ad">
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 179px; height: auto;" data-block-id="5dd0c5ba52c00d2daf8eb37d3e9afb84"><div class="sl-block-content fragment" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; text-align: center;" data-fragment-index="0">
+<h1>Nand To Tetris</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 277px; height: auto;" data-block-id="6d417ed1f638bc26b9900c665fe75789"><div class="sl-block-content fragment" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; text-align: center;" data-fragment-index="1">
+<h1>Haskell Programming From First Principles</h1>
+
+<p> </p>
+</div></div></section><section data-id="29e6ab071ba06e7b4a26a8778d268a5f"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 102px;" data-block-id="3f845b3e9e002598647d3af69b7a95b8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h1>Stuff We're Talking About Today:</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 297px;" data-block-id="f40f5bbfc0bb22d1418a0346757cfb5a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>Combinatorial Boolean Circuitry</p>
+	</li>
+	<li class="fragment" data-fragment-index="1">
+	<p>Exciting function compositions</p>
+	</li>
+	<li class="fragment" data-fragment-index="2">
+	<p>Monoidal Arithmetic Circuitry</p>
+	</li>
+	<li class="fragment" data-fragment-index="3">
+	<p>Monadic Sequential Circuitry</p>
+	</li>
+</ul>
+</div></div></section></section><section class="stack" data-id="3d4d207200852796059d66b749b146ae"><section data-id="e1feaf58d17f1bd3482cbc7c9b8cf62b"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 171px; height: auto;" data-block-id="654ed877103776253dd720185135be59"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Introducing A Language</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 255px; height: auto;" data-block-id="6403ea0fd428d5a0f9c19886ede805a6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(34, 34, 34);">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>Based entirely on function input and output</p>
+	</li>
+	<li class="fragment" data-fragment-index="1">
+	<p>Relies on function composition for portability</p>
+	</li>
+	<li class="fragment" data-fragment-index="2">
+	<p>Declarative, not imperative in nature</p>
+	</li>
+	<li class="fragment" data-fragment-index="3">
+	<p>Encodes side effects in a type</p>
+	</li>
+</ul>
+</div></div>
+
+
+
+</section><section data-id="4998361fa20666e75ac3cf071c51e84b"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 208px; height: auto;" data-block-id="aece212ce2d98ac55d8556ae522614cc"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Any Guesses?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 280px; height: auto;" data-block-id="5072084c288716e3b23ee6c2a3b69875"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;">
+<ul>
+	<li style="" class="fragment" data-fragment-index="0">
+	<p>A hot new compiles-to-JS language?</p>
+	</li>
+	<li style="" class="fragment" data-fragment-index="1">
+	<p> A semi Turing complete configuration gone rogue?</p>
+	</li>
+	<li style="" class="fragment" data-fragment-index="2">
+	<p>The fabled chosen language to finally unite all JVM programmers?</p>
+	</li>
+</ul>
+</div></div>
+
+
+
+</section><section data-id="869ca973a6500c324f917152d07448d2"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 144px;" data-block-id="ae74fb599a510e4a1bc3e9952e62309f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; border-width: 1px; background-color: rgba(0, 0, 0, 0);">
+<h1>HARDWARE</h1>
+
+<h1>DESCRIPTION</h1>
+
+<h1>LANGUAGE</h1>
+</div></div>
+</section><section data-id="a788043ca433f0f689fe37f361172e50"><div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 357px; left: 80px; top: 172px;" data-block-id="05a143593700181b8aa103bf5bde4039"><div class="sl-block-content" style="z-index: 11;"><pre class="java"><code>CHIP MyChip {
+    IN a, b;  // can be many ins
+    OUT out;  // can be many outs
+
+    PARTS:
+    //Here we connect inputs and outputs using other chips!
+    //Wire the inputs a &amp; b to BuiltInChip inputs,
+    //assign its output to a variable
+    BuiltInChip(aInput=a, bInput=b, out=myVar)
+
+    //Wire in the variable myVar (output of other chip) to BuiltInChips input,
+    //wire its output to the output of MyChip
+    BuiltInChip(a=myVar, b=myVar, out=out)
+}
+</code></pre></div></div></section><section data-id="d30e1d7281d5392f54de7237b57e1534"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 128px; height: auto;" data-block-id="875a342ed5102bf2b7179a31c0112dc2"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>What's Up With NAND?</h1>
+</div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 120px; min-height: 30px; width: 800px; left: 80px; top: 226px;" data-block-id="b7d6089517be8e7b30908f92af019988"><div class="sl-block-content" style="z-index: 12; color: rgb(68, 68, 68);" data-table-cols="3" data-table-rows="5"><table><tbody>
+<tr>
+<th>Input A</th>
+<th>Input B</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>High</td>
+<td>High</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>High</td>
+<td>Low</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Low</td>
+<td>High</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Low</td>
+<td>Low</td>
+<td>High</td>
+</tr>
+</tbody></table></div></div></section><section data-id="eef7c4b839c5ef84d846f1c397620265"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="53b7ee0766ec4e0c9cbb41b8480fb7c1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>NAND in Haskell!</h1>
+</div></div></section></section><section class="stack" data-id="dcc63984caaff20b237e74a436f37ea3"><section data-id="cc1316aeccdc3ff3f29ff9bd857bd3f7"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="72187b045ffa1beb8124510699b2a964"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Boolean Logic</h1>
+</div></div></section><section data-id="67149f9250ed0f2deda4a40693d149f1"><div class="sl-block" data-block-type="code" style="width: 800px; height: 458px; left: 80px; top: 170px;" data-block-id="ca1330e62c9103ad2dbfe13e756eda4f"><div class="sl-block-content" style="z-index: 10;"><pre class="java"><code>/**
+ * Not gate: out = not in
+ */
+
+CHIP Not {
+    IN in;
+    OUT out;
+
+    PARTS:
+    //Input of not is wired to both a &amp; b of Nand
+    //Output of Nand is wired out
+    //Truth Table of Nand:
+    // T T -&gt; F
+    // T F -&gt; T
+    // F T -&gt; T
+    // F F -&gt; T
+    // The first and last options are our not!
+    Nand(a=in, b=in, out=out);
+}
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 40px; top: 72px;" data-block-id="766d885d27a52271333ef0ff22c19656"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h1>Not In HDL!</h1>
+</div></div></section><section data-id="71091d8c7a984534c075fe10a571c23a"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 880px; left: 0px; top: 301px;" data-block-id="7777d44b86374aa6cb179cb08e80d717"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h1>Not In Haskell!</h1>
+</div></div></section><section data-id="00f5617c451b22d3b447aeb52886124e"><div class="sl-block" data-block-type="code" style="width: 800px; height: 458px; left: 80px; top: 170px;" data-block-id="07e79fb10e1c8c855ab376d90e658f67"><div class="sl-block-content" style="z-index: 10;"><pre class="java"><code>CHIP And {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    //Wire inputs a &amp; b to Nand 
+    //Wire Nand output to variable x
+    Nand(a=a, b=b, out=x);
+    //Wire variable x to Not, wire x to And output
+    Not(in=x, out=out);
+}
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 40px; top: 72px;" data-block-id="0d32680ea09101112f0a9786d0c9a514"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h1>And In HDL!</h1>
+</div></div></section><section data-id="3b405baffdf5edd3c03cff1d35c2add7"><div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 0px; top: 301px;" data-block-id="7377d3c4e3cbcac80f47a2f57ca84468"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h1>And In Haskell!</h1>
+</div></div></section><section data-id="102588c118847c3d3c7503eae44a4a4e"><div class="sl-block" data-block-type="code" style="width: 800px; height: 534px; left: 80px; top: 132px;" data-block-id="c671a8b6e637420970ed6a64d07016a0"><div class="sl-block-content" style="z-index: 10;"><pre class="java"><code>// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+
+
+CHIP And16 {
+    IN a[16], b[16];
+    OUT out[16];
+
+    PARTS:
+    And(a=a[0], b=b[0], out=out[0]);
+    And(a=a[1], b=b[1], out=out[1]);
+    And(a=a[2], b=b[2], out=out[2]);
+    And(a=a[3], b=b[3], out=out[3]);
+    And(a=a[4], b=b[4], out=out[4]);
+    And(a=a[5], b=b[5], out=out[5]);
+    And(a=a[6], b=b[6], out=out[6]);
+    And(a=a[7], b=b[7], out=out[7]);
+    And(a=a[8], b=b[8], out=out[8]);
+    And(a=a[9], b=b[9], out=out[9]);
+    And(a=a[10], b=b[10], out=out[10]);
+    And(a=a[11], b=b[11], out=out[11]);
+    And(a=a[12], b=b[12], out=out[12]);
+    And(a=a[13], b=b[13], out=out[13]);
+    And(a=a[14], b=b[14], out=out[14]);
+    And(a=a[15], b=b[15], out=out[15]);
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 40px; top: 34px;" data-block-id="f17107fecd1575bba4f6bcad4831fb99"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h1>And16 In HDL!</h1>
+</div></div></section></section><section class="stack" data-id="be312c797843da2a15244d322d248fcc"><section data-id="fe09dab80e1c6fd8ba411a5ea1827a08"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 198px; height: auto;" data-block-id="0233d8012d0f20428b90391a31fc5d4e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>A Fanciful Sidetrack Through</h1>
+
+<h1>Function Composition</h1>
+</div></div></section><section data-id="0426a255e91874304fba154cf70bbc1d"><div class="sl-block" data-block-type="code" style="width: 800px; height: 84px; left: 80px; top: 160px;" data-block-id="12f438bd74891d29b8ebdfe2c09a93c1"><div class="sl-block-content" style="z-index: 11;"><pre class="haskell"><code>(.) :: (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
+
+(f . g) x = f (g x)
+
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 115px; left: 80px; top: 244px;" data-block-id="6c2e0d1c242e48314eeb0feb39bd27f0"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><pre class="haskell"><code>-- imagine we want to convert our Voltage to a Boolean Type
+
+voltageToBoolean :: Voltage -&gt; Boolean
+voltageToBoolean High = True
+voltageToBoolean Low = False
+
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 93px; left: 80px; top: 359px;" data-block-id="a5f1e294b29de64da1daff84e6c40e8c"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="1"><pre class="haskell"><code>-- contrived example to give an opposite boolean of a voltage
+
+lie :: Voltage -&gt; Boolean
+lie x = voltageToBoolean (not' x)
+
+
+
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 93px; left: 80px; top: 452px;" data-block-id="26b8b00a39eb73f1d380e380443c9710"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="2"><pre class="haskell"><code>-- can be composed!
+
+lie :: Voltage -&gt; Boolean
+lie x = (voltageToBoolean . not') x
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 93px; left: 80px; top: 545px;" data-block-id="4d9fa16d60b16b74d7b53fa0a51ced53"><div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="3"><pre class="haskell"><code>
+-- can be reduced to point free!
+lie :: Voltage -&gt; Boolean
+lie = voltageToBoolean . not'
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 62px;" data-block-id="ac852c91cfe3e0ad5d0ac17d719d3e86"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;" dir="ui"><h1>(.) Is Composition<br>
+</h1></div></div></section><section data-id="dc25fc1c787d163747dd4080f956e68a"><div class="sl-block" data-block-type="code" style="width: 800px; height: 51px; left: 80px; top: 170px;" data-block-id="86aa224106470c8268ccae1b774fe030"><div class="sl-block-content fragment" style="z-index: 10;" data-fragment-index="0"><pre class="java"><code>//In some UI File
+Utils.getRGBWithAlpha("Red");
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 40px; top: 72px;" data-block-id="7ce659105458019f72e36d5843575223"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h1>Is It Useful?</h1>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 213px; left: 80px; top: 221px;" data-block-id="95eb5099eb7d5addd6f8171f59d1ef36"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="1"><pre class="java"><code>//In Utils File
+const ColorUtils = {
+  getRGBWithAlpha: color =&gt; {
+   const hex = StringToHexLib.convert(color)
+   const rgb = ColorLib.toRGB(hex);
+
+   //args in wrong order, also no auto curry...
+   const withAlpha = OtherLib.addAlpha(rgb, 0.5); 
+   return withAlpha
+  }
+}
+
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 86px; left: 80px; top: 434px;" data-block-id="34d9d4a860caa6ba0b76466c903d9446"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="2"><pre class="java"><code>//all those functions that do nothing then call other functions...
+//sure would be nice to just say
+getRGBWithAlpha = convert . toRGB . (addAlpha 0.5)</code></pre></div></div></section><section data-id="79a6d72f1abb10bf977e22d1c24d6482"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 138px; height: auto;" data-block-id="6024a2a55c976db6199de97938c69f73"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1><strong>If</strong></h1>
+
+<h1>f (g x) = f . g</h1>
+
+<h1><strong>Can</strong></h1>
+
+<h1>f (g x y) = f ... g</h1>
+</div></div></section><section data-id="83b136342b0d476e3d89bb3a4ad6f7a0"><div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 65px;" data-block-id="c46e3b65471e39dc6f703f6d8485f7a2"><div class="sl-block-content" style="z-index: 10; font-size: 107%;"><pre class="haskell"><code>canItCompose f g x y = f (g x y)
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 95px;" data-block-id="c1e65f278e222de33fc4960799e80b5b"><div class="sl-block-content fragment" style="z-index: 12; font-size: 107%;" data-fragment-index="0"><pre class="haskell"><code>-- 1. convert to lambda
+
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 125px;" data-block-id="1d6e4bc9b708e64cb619bd7068a59fbc"><div class="sl-block-content fragment" style="z-index: 13; font-size: 107%;" data-fragment-index="1"><pre class="haskell"><code>\f g x y -&gt; f (g x y)
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 155px;" data-block-id="8645396015783869f1cce2b5631287af"><div class="sl-block-content fragment" style="z-index: 14; font-size: 107%;" data-fragment-index="2"><pre class="haskell"><code>-- 2. use $ to remove parentheses
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 185px;" data-block-id="62ba20c5e3003f68cda00d87c082dbd0"><div class="sl-block-content fragment" style="z-index: 15; font-size: 107%;" data-fragment-index="3"><pre class="haskell"><code>\f g x y -&gt; f $ g x y
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 215px;" data-block-id="aebe15d64fd52b5d3aad4403eca2e602"><div class="sl-block-content fragment" style="z-index: 16; font-size: 107%;" data-fragment-index="4"><pre class="haskell"><code>-- 3. Trickiest part for me, follow the types of (.) and ($)
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 245px;" data-block-id="264b11449966880f8702c3042f88d00e"><div class="sl-block-content fragment" style="z-index: 17; font-size: 107%;" data-fragment-index="5"><pre class="haskell"><code>\f g x y -&gt; f . g x $ y
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 275px;" data-block-id="1c00e05019d967cba4575f622f5ac604"><div class="sl-block-content fragment" style="z-index: 18; font-size: 107%;" data-fragment-index="6"><pre class="haskell"><code>-- 4. You can eliminate an argument that is only passed to other functions
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 305px;" data-block-id="d914a007da82c80d7e3d8b622d796c50"><div class="sl-block-content fragment" style="z-index: 19; font-size: 107%;" data-fragment-index="7"><pre class="haskell"><code>\f g x   -&gt; f . g x
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 335px;" data-block-id="862c51a67d21548a97c98808470bd30f"><div class="sl-block-content fragment" style="z-index: 20; font-size: 107%;" data-fragment-index="8"><pre class="haskell"><code>-- 5. Separate f and g with parentheses to make evaluation order explicit
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 365px;" data-block-id="adb3fd28e93939db7a80e34150122840"><div class="sl-block-content fragment" style="z-index: 21; font-size: 107%;" data-fragment-index="9"><pre class="haskell"><code>\f g x   -&gt; (f .) (g x)
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 395px;" data-block-id="a92766b861f92e226e3971860f02ef70"><div class="sl-block-content fragment" style="z-index: 22; font-size: 107%;" data-fragment-index="10"><pre class="haskell"><code>-- 6. Use $ to remove parentheses around g
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 425px;" data-block-id="e7a4b5b5527b62de660db639903dc9b4"><div class="sl-block-content fragment" style="z-index: 23; font-size: 107%;" data-fragment-index="11"><pre class="haskell"><code>\f g x   -&gt; (f .) $ g x
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 455px;" data-block-id="4ad083ff5decd33c1e54c3f12f30e282"><div class="sl-block-content fragment" style="z-index: 24; font-size: 107%;" data-fragment-index="12"><pre class="haskell"><code>-- 7. Use our ole ($) -&gt; (.) trick</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 485px;" data-block-id="da8db7a21f91d1641c22b3a805029f39"><div class="sl-block-content fragment" style="z-index: 25; font-size: 107%;" data-fragment-index="13"><pre class="haskell"><code>\f g x   -&gt; (f .) . g $ x
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 515px;" data-block-id="80f01ca8840a099babb5f47c94ebcd7f"><div class="sl-block-content fragment" style="z-index: 26; font-size: 107%;" data-fragment-index="14"><pre class="haskell"><code>-- 8. Dear me, what abomination is this
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 545px;" data-block-id="691e8274c3d688f08b95d52c40f497f5"><div class="sl-block-content fragment" style="z-index: 27; font-size: 107%;" data-fragment-index="15"><pre class="haskell"><code>\f g     -&gt; (f .) . g
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 575px;" data-block-id="98042c7e148b4a56a9e7dfffea775d8d"><div class="sl-block-content fragment" style="z-index: 28; font-size: 107%;" data-fragment-index="16"><pre class="haskell"><code>-- 9. Live your best Haskell life, assign it to a cute infix
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 880px; height: 30px; left: 40px; top: 605px;" data-block-id="9b90259a669f6f678cfd793ac082064f"><div class="sl-block-content fragment" style="z-index: 30; font-size: 107%;" data-fragment-index="17"><pre class="haskell"><code>(...) f g = (f .) . g</code></pre></div></div></section><section data-id="be9df98d13bab7446c7ecabe44a84336"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 193px; height: auto;" data-block-id="30a5a3b8c8ad29f28ddbf6aa0d128d22"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1>not (nand x y)</h1>
+
+<h1><strong>Can Indeed</strong></h1>
+
+<h1>not ... nand</h1>
+</div></div></section><section data-id="53ff4139464cc514fcd5cf8bd8a96174"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 81px; height: auto;" data-block-id="85c4876466bb82e945e69db1a59dff5c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>What's with Data.Aviary and blackbird?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 229px; height: auto;" data-block-id="377195747520d720222443c2e193f252"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li style="" class="fragment" data-fragment-index="0">Combinatory Logic was largely developed by Haskell Curry</li>
+	<li style="" class="fragment" data-fragment-index="1">Haskell Curry was an avid bird watcher</li>
+	<li style="" class="fragment" data-fragment-index="2">Raymond Smallman wrote a celebration of combinatory logic puzzles called "To Mock a Mockingbird"</li>
+	<li style="" class="fragment" data-fragment-index="3">The blackbird combinator is introduced in that book</li>
+	<li style="" class="fragment" data-fragment-index="4">Combinatory Logic is functionally equivalent to lambda calculus</li>
+	<li style="" class="fragment" data-fragment-index="5">Haskell is lambda calculus</li>
+	<li style="" class="fragment" data-fragment-index="6">Haskell is functionally equivalent to HDL?</li>
+</ul>
+</div></div></section><section data-id="8a5537859d6d8707cae6c4344617913c"><div class="sl-block" data-block-type="image" style="width: 950px; height: 538px; left: 0px; top: 81px; min-width: 4px; min-height: 4px;" data-block-id="f591eb4c2afd5dabf2c6b5a4fa1d4d76"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="500" data-natural-height="283" data-lazy-loaded="" data-src="from-nand-to-lambda/c201646f711ff63d49229def1d8ac0ef.gif"></div></div></section><section data-id="5dbc1d51b4a31bd85286819975f39205"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="0e16d4c0d91995b0cdfbaf5ecb868ff4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Back to The (More) Down To Earth Biz</h1>
+</div></div></section></section><section class="stack" data-id="28330f2d811057f18f129e94d6ae04cb"><section data-id="9b33648fdf157ef9dabf3b4a98ffafa1">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 40px; top: 301px;" data-block-id="d6b84bc55e270c763536139ea5f2d14e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h1>Binary Arithmetic</h1>
+</div></div>
+
+</section><section data-id="ac7911ac74f2d4ca228a9021c131d03c">
+
+<div class="sl-block" data-block-type="table" style="height: auto; width: 800px; left: 80px; top: 274px;" data-block-id="6de914f5a87546594af3ffab1db519c6"><div class="sl-block-content" style="z-index: 11;" data-table-cols="4" data-table-rows="5"><table><tbody>
+<tr>
+<th>Operand</th>
+<th>Operand</th>
+<th>Sum</th>
+<th>Carry</th>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody></table></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 40px; top: 176px;" data-block-id="e6ae48dd6e6aacd0692ceb74b97dc6ec"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h1>Half Adder</h1>
+</div></div></section><section data-id="c2e721e44e9aa430f0be06d8c40fae3f">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 196px; left: 593px; top: 210px;" data-block-id="e7ffe5be66da91e39f3d6955f8832b16"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui" data-fragment-index="2">
+<h1>Sum</h1>
+</div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; width: 391px; left: 513px; top: 329px;" data-block-id="235265c2f62cdac233c564ad59459a95"><div class="sl-block-content fragment" style="z-index: 12;" data-table-cols="3" data-table-rows="5" data-fragment-index="3"><table><tbody>
+<tr>
+<th>Operand</th>
+<th>Operand</th>
+<th>Sum</th>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody></table></div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; width: 392px; left: 44px; top: 329px;" data-block-id="30a90a4544ee84fd998215c5f1ecbae8"><div class="sl-block-content fragment" style="z-index: 13;" data-table-cols="3" data-table-rows="5" data-fragment-index="1"><table><tbody>
+<tr>
+<th>Operand</th>
+<th>Operand</th>
+<th>Sum</th>
+</tr>
+<tr>
+<td>True</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr>
+<td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+</tbody></table></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 196px; left: 125px; top: 210px;" data-block-id="0e67dc3b54aeebb02cfa97a3b49032f6"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" dir="ui" data-fragment-index="0">
+<h1>Xor</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 70px;" data-block-id="29bd6a10968ef0f3e2863117486d9771"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<h1>Boolean To Binary</h1>
+</div></div></section><section data-id="7660e7abb8b31aeb45ff00822f22537e">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 196px; left: 593px; top: 210px;" data-block-id="974e0ab3d69c3206f937595716a61ac1"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui" data-fragment-index="2">
+<h1>Carry</h1>
+</div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; width: 391px; left: 513px; top: 329px;" data-block-id="d66a62a501db71e98e0110758aa22c1a"><div class="sl-block-content fragment" style="z-index: 11;" data-table-cols="3" data-table-rows="5" data-fragment-index="3"><table><tbody>
+<tr>
+<th>Operand</th>
+<th>Operand</th>
+<th>Carry</th>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody></table></div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; width: 392px; left: 44px; top: 329px;" data-block-id="7bf53993c8026b3db1c1fbe5c5d2ee35"><div class="sl-block-content fragment" style="z-index: 12;" data-table-cols="3" data-table-rows="5" data-fragment-index="1"><table><tbody>
+<tr>
+<th>Operand</th>
+<th>Operand</th>
+<th>Sum</th>
+</tr>
+<tr>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr>
+<td>False</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+</tbody></table></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 196px; left: 125px; top: 210px;" data-block-id="b57cdc6745fded65e9f752b70742a7a9"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" dir="ui" data-fragment-index="0">
+<h1>And</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 70px;" data-block-id="a9c91d1da260dc6a88f27cfa5c26f6ac"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<h1>Boolean To Binary</h1>
+</div></div></section><section data-id="9a8dadc76c105490c068e802d11e8cbf"><div class="sl-block" data-block-type="code" style="width: 800px; height: 458px; left: 80px; top: 170px;" data-block-id="906a96cb6a8508c2421963f24debb724"><div class="sl-block-content" style="z-index: 10;"><pre class="java"><code>
+/**
+ * Computes the sum of two bits.
+ */
+
+CHIP HalfAdder {
+    IN a, b;    // 1-bit inputs
+    OUT sum,    // Right bit of a + b 
+        carry;  // Left bit of a + b
+
+    PARTS:
+    Xor(a=a, b=b, out=sum);
+    And(a=a, b=b, out=carry);
+}
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 40px; top: 72px;" data-block-id="3e27e5716965c79d8bee5fe52ea9f389"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h1>HalfAdder In HDL!</h1>
+</div></div></section><section data-id="402ec944c903a7665078dda1aea77b44"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 194px; height: auto;" data-block-id="eb088c0c4cd4e0b623392afd616c2a87"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>What's A Monoid, Precious?</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 480px; left: 0px; top: 420px;" data-block-id="6a62b336b8cf29106dae83cd819020cc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li style="text-align: left;" class="fragment" data-fragment-index="0">Algebraic Structure</li>
+	<li style="text-align: left;" class="fragment" data-fragment-index="1">Associative Binary Operation</li>
+	<li style="text-align: left;" class="fragment" data-fragment-index="2">Identity Element</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 480px; left: 480px; top: 420px;" data-block-id="094cc3fba3843ec887d4b815bb4b0041"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<ul>
+	<li class="fragment" style="text-align: left;" data-fragment-index="3">Monoid a</li>
+	<li class="fragment" style="text-align: left;" data-fragment-index="4">mappend :: a -&gt; a -&gt; a</li>
+	<li class="fragment" style="text-align: left;" data-fragment-index="5">mempty :: a</li>
+</ul>
+</div></div></section><section data-id="c2353f65a36a0083992669330139d079"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 193px; height: auto;" data-block-id="56bb88c61a6e2059116e90aa6faa9f04"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Monoid And</h1>
+
+<h1>&amp;</h1>
+
+<h1>Monoid Xor</h1>
+</div></div></section><section data-id="1b5fc9a97777968b10db5f8474c92644"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 252px; height: auto;" data-block-id="61b3b1b7c6c32ee2f478459b481bf2a6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>HalfAdder in Haskell!</h1>
+</div></div></section><section data-id="3df0da3c75d959a0b8807838759fc4b9">
+
+<div class="sl-block" data-block-type="table" style="height: auto; width: 800px; left: 80px; top: 274px;" data-block-id="759a5e88fa2baa0b8bc6987345fc0e14"><div class="sl-block-content" style="z-index: 11;" data-table-cols="5" data-table-rows="5"><table><tbody>
+<tr>
+<th>Operand</th>
+<th>Operand</th>
+<th>Operand</th>
+<th>Sum</th>
+<th>Carry</th>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody></table></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 40px; top: 176px;" data-block-id="246d856927c918f47b6e718b16ef55f4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h1>Full Adder</h1>
+</div></div>
+</section><section data-id="dd932a6ee5d5b2d068db55999319386a"><div class="sl-block" data-block-type="code" style="width: 800px; height: 458px; left: 80px; top: 170px;" data-block-id="576cae0e3d29ae4246f51421b9266349"><div class="sl-block-content" style="z-index: 10;"><pre class="java"><code>
+/**
+ * Computes the sum of two bits.
+ */
+
+CHIP FullAdder {
+    IN a, b c;    // 1-bit inputs
+    OUT sum,    // Right bit of a + b 
+        carry;  // Left bit of a + b
+
+    PARTS:
+    HalfAdder(a=a, b=b, sum=sum1, carry=carry1);
+    HalfAdder(a=sum1, b=c sum=sum, carry=carry1);
+    Or(a=carry1, b=carry2, out=carry);
+}
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 40px; top: 72px;" data-block-id="fd7425358092f3d59e309b5048a8dcfc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h1>FullAdder In HDL!</h1>
+</div></div></section><section data-id="8f184631303eec02d871153629118418"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="4e4d82849d284e74288124f702d513a0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Full Adder in Haskell!</h1>
+</div></div></section></section><section class="stack" data-id="1be2fd62cf4e0783ca5b58eeb14b267a"><section data-id="460200303bd297ee3c9416766e254c07"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="e706a246c0a2a33e9105d0616a4fdb40"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Sequencing Circuits</h1>
+</div></div></section><section data-id="e101e9d1dfd213bc5f8d5620a105fff2"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 204px;" data-block-id="2db12e8ae9f784484804677aae89fc39"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h1>Digital Flip Flop</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 302px;" data-block-id="48e8e48603842027c97deecf578249f0"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="0">
+<h1>Bistable Multivibrator</h1>
+</div></div></section><section data-id="60f2bcfbfcefc541c9a731e043e5f143"><div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 210px; height: 210px; left: 285px; top: 35px;" data-block-id="87bf5723aa6cac83d799610219905470"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(217, 210, 233)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 210 210"><rect width="210" height="210" class="shape-element" fill="rgb(217, 210, 233)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 210px; height: 210px; left: 285px; top: 455px;" data-block-id="1bc113102217fa12790cce6df9bce914"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(234, 209, 220)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 210 210"><rect width="210" height="210" class="shape-element" fill="rgb(234, 209, 220)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 495px; top: 140px;" data-block-id="712e53c9dbff52fd1f8860bf2719a835"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="445" data-line-y2="200" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="445" height="1" viewbox="0 200 445 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="200" x2="445" y2="200"></line><line stroke="#b4a7d6" stroke-width="2" x1="0" y1="200" x2="445" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 495px; top: 560px;" data-block-id="7fefb908f418a7130a079ddff0aeba20"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="445" data-line-y2="200" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="445" height="1" viewbox="0 200 445 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="200" x2="445" y2="200"></line><line stroke="#d5a6bd" stroke-width="2" x1="0" y1="200" x2="445" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 80px; top: 140px;" data-block-id="8f63514d921561b35108ad8f21a9133b"><div class="sl-block-content" data-line-x1="-365" data-line-y1="350" data-line-x2="160" data-line-y2="0" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 28;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="525" height="350" viewbox="-365 0 525 350"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-365" y1="350" x2="160" y2="0"></line><line stroke="#b4a7d6" stroke-width="2" x1="-365" y1="350" x2="160" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 80px; top: 209px;" data-block-id="8ef7d355bf5a34731dd3c4ad1a8b347b"><div class="sl-block-content" data-line-x1="-435" data-line-y1="60" data-line-x2="90" data-line-y2="410" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 25;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="525" height="350" viewbox="-435 60 525 350"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-435" y1="60" x2="90" y2="410"></line><line stroke="#d5a6bd" stroke-width="2" x1="-435" y1="60" x2="90" y2="410"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 80px; top: 490px;" data-block-id="fcaad07f47e1ea2715d1c20f7e90fe1d"><div class="sl-block-content" data-line-x1="-126" data-line-y1="197" data-line-x2="80" data-line-y2="197" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="206" height="1" viewbox="-126 197 206 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-126" y1="197" x2="80" y2="197"></line><line stroke="#b4a7d6" stroke-width="2" x1="-126" y1="197" x2="80" y2="197"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 80px; top: 209px;" data-block-id="84332d7c7fdd6e8e5b679a8cd218e934"><div class="sl-block-content" data-line-x1="-425" data-line-y1="-79" data-line-x2="-220" data-line-y2="-79" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="205" height="1" viewbox="-425 -79 205 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-425" y1="-79" x2="-220" y2="-79"></line><line stroke="#d5a6bd" stroke-width="2" x1="-425" y1="-79" x2="-220" y2="-79"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 20px; top: 79px;" data-block-id="ced8ef07041c5e3cd9bece32118290c8"><div class="sl-block-content" data-line-x1="-66" data-line-y1="0" data-line-x2="200" data-line-y2="0" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="266" height="1" viewbox="-66 0 266 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-66" y1="0" x2="200" y2="0"></line><line stroke="#000000" stroke-width="2" x1="-66" y1="0" x2="200" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 20px; top: 620px;" data-block-id="1ba1cb18d2a9a2e854b584407867838e"><div class="sl-block-content" data-line-x1="-105" data-line-y1="199" data-line-x2="160" data-line-y2="200" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="265" height="1" viewbox="-105 199 265 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-105" y1="199" x2="160" y2="200"></line><line stroke="#000000" stroke-width="2" x1="-105" y1="199" x2="160" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 210px; left: 285px; top: 103px;" data-block-id="61830d0e3e1742abdbfccaf885c193b4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(255, 255, 255);">
+<h2>Nand 1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 210px; left: 285px; top: 523px;" data-block-id="3c26364645bdab1ef8fa6550b1def0e1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; color: rgb(255, 255, 255);">
+<h2>Nand 2</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 161px; left: 640px; top: 486px;" data-block-id="372f3800c4ab8954c2cce12b9ddfaa03"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22;">
+<h2>Out ?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 161px; left: 640px; top: 66px;" data-block-id="c2c5f8482337464d01471fd8432bb25b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23;">
+<h2>Out ?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 230px; left: 12px; top: 147px;" data-block-id="c1011aa3e400fcd75f9e808b40cc1955"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 26;">
+<h2>IN ?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 230px; left: 12px; top: 626px;" data-block-id="0d973b847583072b3fa102776680b865"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24;">
+<h2>IN ?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 230px; left: 12px; top: 5px;" data-block-id="a4042bddfb74a013c669fde74fba71c4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui"><h2>IN ?</h2></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 230px; left: 12px; top: 490px;" data-block-id="83782cfd615014c03934ceabffa8f361"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 27;">
+<h2>IN ?</h2>
+</div></div></section><section data-id="3688ae00bc92a227b701f6c50217fa38"><div class="sl-block" data-block-type="shape" style="width: 210px; height: 210px; left: 285px; top: 35px;" data-block-id="9aa269435c9d99aa6013c707a5f3def6"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(217, 210, 233)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 210 210"><rect width="210" height="210" class="shape-element" fill="rgb(217, 210, 233)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 210px; height: 210px; left: 285px; top: 455px;" data-block-id="5ae9b08033d9c41dc65453b40285152d"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(234, 209, 220)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 210 210"><rect width="210" height="210" class="shape-element" fill="rgb(234, 209, 220)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 495px; top: 140px;" data-block-id="fb8d3d3b2450813e9c91337bd3f0f778"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="445" data-line-y2="200" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="445" height="1" viewbox="0 200 445 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="200" x2="445" y2="200"></line><line stroke="#b4a7d6" stroke-width="2" x1="0" y1="200" x2="445" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 495px; top: 560px;" data-block-id="885387b02df45bb10e60ae5617e96464"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="445" data-line-y2="200" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="445" height="1" viewbox="0 200 445 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="200" x2="445" y2="200"></line><line stroke="#d5a6bd" stroke-width="2" x1="0" y1="200" x2="445" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 140px;" data-block-id="bf3d1d308eea98e98c51e17901722c3e"><div class="sl-block-content" data-line-x1="-365" data-line-y1="350" data-line-x2="160" data-line-y2="0" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 27;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="525" height="350" viewbox="-365 0 525 350"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-365" y1="350" x2="160" y2="0"></line><line stroke="#b4a7d6" stroke-width="2" x1="-365" y1="350" x2="160" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 209px;" data-block-id="8bec2959c08121fe9bcc9656bddafa1e"><div class="sl-block-content" data-line-x1="-435" data-line-y1="60" data-line-x2="90" data-line-y2="410" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 24;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="525" height="350" viewbox="-435 60 525 350"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-435" y1="60" x2="90" y2="410"></line><line stroke="#d5a6bd" stroke-width="2" x1="-435" y1="60" x2="90" y2="410"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 490px;" data-block-id="32a55b4475c341fa52e98c7dd0028c36"><div class="sl-block-content" data-line-x1="-126" data-line-y1="197" data-line-x2="80" data-line-y2="197" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="206" height="1" viewbox="-126 197 206 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-126" y1="197" x2="80" y2="197"></line><line stroke="#b4a7d6" stroke-width="2" x1="-126" y1="197" x2="80" y2="197"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 209px;" data-block-id="c822668b5d94a4832d7531b360cbdd41"><div class="sl-block-content" data-line-x1="-425" data-line-y1="-79" data-line-x2="-220" data-line-y2="-79" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="205" height="1" viewbox="-425 -79 205 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-425" y1="-79" x2="-220" y2="-79"></line><line stroke="#d5a6bd" stroke-width="2" x1="-425" y1="-79" x2="-220" y2="-79"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 20px; top: 79px;" data-block-id="a1c5fe445b4c3c02bc89a53280d3f7a4"><div class="sl-block-content" data-line-x1="-66" data-line-y1="0" data-line-x2="200" data-line-y2="0" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="266" height="1" viewbox="-66 0 266 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-66" y1="0" x2="200" y2="0"></line><line stroke="#000000" stroke-width="2" x1="-66" y1="0" x2="200" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 20px; top: 620px;" data-block-id="9d0954794905b9e9811f3f3c98e6124d"><div class="sl-block-content" data-line-x1="-105" data-line-y1="199" data-line-x2="160" data-line-y2="200" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="265" height="1" viewbox="-105 199 265 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-105" y1="199" x2="160" y2="200"></line><line stroke="#000000" stroke-width="2" x1="-105" y1="199" x2="160" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 210px; left: 285px; top: 103px;" data-block-id="39da3fcdcd9387dd24d061b041ceba5f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; color: rgb(255, 255, 255);">
+<h2>Nand 1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 210px; left: 285px; top: 523px;" data-block-id="117d6a209aac4ce4419645aa7d62c005"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(255, 255, 255);">
+<h2>Nand 2</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 161px; left: 640px; top: 486px;" data-block-id="344b65121d79c22d25a07a0a0780ff8a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21;">
+<h2>Out ?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 161px; left: 640px; top: 66px;" data-block-id="f42d942c1d3bb0d4698a730b6db8d48d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22;">
+<h2>Out ?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 147px;" data-block-id="0c9c02081d04e64bcc1224dd3c7fbb5d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 25;">
+<h2>IN ?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 626px;" data-block-id="cd2cd4164fc3ea9f4872d7264097ed3d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23;">
+<h2>1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 5px;" data-block-id="65463f2bdfee7e34239b04630816f32c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<h2>1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 490px;" data-block-id="75cbfa91b94090e9118ff81a9a24e3a6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 26;">
+<h2>IN ?</h2>
+</div></div></section><section data-id="a6e1b9fbc925171d3a2dab03a12e6cfb"><div class="sl-block" data-block-type="shape" style="width: 210px; height: 210px; left: 285px; top: 35px;" data-block-id="930dc66dc3565dac29b405c6410f0c36"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(217, 210, 233)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 210 210"><rect width="210" height="210" class="shape-element" fill="rgb(217, 210, 233)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 210px; height: 210px; left: 285px; top: 455px;" data-block-id="cfe235364210ead47b433b4dc9f5db2d"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(234, 209, 220)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 210 210"><rect width="210" height="210" class="shape-element" fill="rgb(234, 209, 220)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 495px; top: 140px;" data-block-id="d3ece1119da64fa58d91417d2f0ac5fc"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="445" data-line-y2="200" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="445" height="1" viewbox="0 200 445 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="200" x2="445" y2="200"></line><line stroke="#b4a7d6" stroke-width="2" x1="0" y1="200" x2="445" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 495px; top: 560px;" data-block-id="6fcaedab27a0116eb02a5af7aa89169b"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="445" data-line-y2="200" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="445" height="1" viewbox="0 200 445 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="200" x2="445" y2="200"></line><line stroke="#d5a6bd" stroke-width="2" x1="0" y1="200" x2="445" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 140px;" data-block-id="21730b6f9bbd9889982ec7b86ddf4001"><div class="sl-block-content" data-line-x1="-365" data-line-y1="350" data-line-x2="160" data-line-y2="0" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="525" height="350" viewbox="-365 0 525 350"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-365" y1="350" x2="160" y2="0"></line><line stroke="#b4a7d6" stroke-width="2" x1="-365" y1="350" x2="160" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 209px;" data-block-id="d18a3f1bc6de43bec3fe5c304f1df065"><div class="sl-block-content" data-line-x1="-435" data-line-y1="60" data-line-x2="90" data-line-y2="410" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 25;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="525" height="350" viewbox="-435 60 525 350"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-435" y1="60" x2="90" y2="410"></line><line stroke="#d5a6bd" stroke-width="2" x1="-435" y1="60" x2="90" y2="410"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 490px;" data-block-id="89ec8f097bc7df94bba4256cf8d66156"><div class="sl-block-content" data-line-x1="-126" data-line-y1="197" data-line-x2="80" data-line-y2="197" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="206" height="1" viewbox="-126 197 206 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-126" y1="197" x2="80" y2="197"></line><line stroke="#b4a7d6" stroke-width="2" x1="-126" y1="197" x2="80" y2="197"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 209px;" data-block-id="8d3535f435d6ba3f2c8e8216fde72b6a"><div class="sl-block-content" data-line-x1="-425" data-line-y1="-79" data-line-x2="-220" data-line-y2="-79" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="205" height="1" viewbox="-425 -79 205 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-425" y1="-79" x2="-220" y2="-79"></line><line stroke="#d5a6bd" stroke-width="2" x1="-425" y1="-79" x2="-220" y2="-79"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 20px; top: 79px;" data-block-id="15f85f4dd499f65d39128417e724f7e2"><div class="sl-block-content" data-line-x1="-66" data-line-y1="0" data-line-x2="200" data-line-y2="0" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="266" height="1" viewbox="-66 0 266 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-66" y1="0" x2="200" y2="0"></line><line stroke="#000000" stroke-width="2" x1="-66" y1="0" x2="200" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 20px; top: 620px;" data-block-id="a9b7902cfab5372600fd24b5b66d85a2"><div class="sl-block-content" data-line-x1="-105" data-line-y1="199" data-line-x2="160" data-line-y2="200" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="265" height="1" viewbox="-105 199 265 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-105" y1="199" x2="160" y2="200"></line><line stroke="#000000" stroke-width="2" x1="-105" y1="199" x2="160" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 210px; left: 285px; top: 103px;" data-block-id="ad1531cf4ee803f99ff8150e4808fb2f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(255, 255, 255);">
+<h2>Nand 1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 210px; left: 285px; top: 523px;" data-block-id="b51607a03460cc13376ba777ee0e7858"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; color: rgb(255, 255, 255);">
+<h2>Nand 2</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 161px; left: 640px; top: 486px;" data-block-id="3eb56dceb11322c56ebd363dc740b94f"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22;" data-fragment-index="2">
+<h2>0</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 161px; left: 640px; top: 66px;" data-block-id="08b6dd7c62ba455a5bad391da9ffa3c3"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23;" data-fragment-index="0">
+<h2>1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 147px;" data-block-id="dd9b4a9daea52d24e32db78e391887f6"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 26;" data-fragment-index="3">
+<h2>0</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 626px;" data-block-id="599ecbf905738436ea96ef85323c2f1a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24;">
+<h2>1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 5px;" data-block-id="0c8ac12505e7d7a7a890335e233c251e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h2>0</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 490px;" data-block-id="55d38a7dfabc95405f4e8d61ae98919d"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 27;" data-fragment-index="1">
+<h2>1</h2>
+</div></div></section><section data-id="49e6f057e2e0a43d20e088b426101319"><div class="sl-block" data-block-type="shape" style="width: 210px; height: 210px; left: 285px; top: 35px;" data-block-id="d15dd55ecdb293c7fbe10bf6ac83eba3"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(217, 210, 233)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 210 210"><rect width="210" height="210" class="shape-element" fill="rgb(217, 210, 233)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 210px; height: 210px; left: 285px; top: 455px;" data-block-id="e6bf85a4e72c0a4b951e4d1327323e69"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(234, 209, 220)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 210 210"><rect width="210" height="210" class="shape-element" fill="rgb(234, 209, 220)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 495px; top: 140px;" data-block-id="3998d26f441f5dac715116d11a43083e"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="445" data-line-y2="200" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="445" height="1" viewbox="0 200 445 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="200" x2="445" y2="200"></line><line stroke="#b4a7d6" stroke-width="2" x1="0" y1="200" x2="445" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 495px; top: 560px;" data-block-id="392a29bbc0dd18736847bd6d296e5b54"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="445" data-line-y2="200" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="445" height="1" viewbox="0 200 445 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="200" x2="445" y2="200"></line><line stroke="#d5a6bd" stroke-width="2" x1="0" y1="200" x2="445" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 140px;" data-block-id="b43bd0036ebef989416450f3735f6359"><div class="sl-block-content" data-line-x1="-365" data-line-y1="350" data-line-x2="160" data-line-y2="0" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="525" height="350" viewbox="-365 0 525 350"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-365" y1="350" x2="160" y2="0"></line><line stroke="#b4a7d6" stroke-width="2" x1="-365" y1="350" x2="160" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 209px;" data-block-id="b241e74ea313be80f26f6a72f94f711b"><div class="sl-block-content" data-line-x1="-435" data-line-y1="60" data-line-x2="90" data-line-y2="410" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 25;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="525" height="350" viewbox="-435 60 525 350"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-435" y1="60" x2="90" y2="410"></line><line stroke="#d5a6bd" stroke-width="2" x1="-435" y1="60" x2="90" y2="410"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 490px;" data-block-id="8c5fd7f8ad5f31bffacc83a5407ed041"><div class="sl-block-content" data-line-x1="-126" data-line-y1="197" data-line-x2="80" data-line-y2="197" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="206" height="1" viewbox="-126 197 206 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-126" y1="197" x2="80" y2="197"></line><line stroke="#b4a7d6" stroke-width="2" x1="-126" y1="197" x2="80" y2="197"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 209px;" data-block-id="c0259ddd1312b41d76d5e744829b4ce1"><div class="sl-block-content" data-line-x1="-425" data-line-y1="-79" data-line-x2="-220" data-line-y2="-79" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="205" height="1" viewbox="-425 -79 205 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-425" y1="-79" x2="-220" y2="-79"></line><line stroke="#d5a6bd" stroke-width="2" x1="-425" y1="-79" x2="-220" y2="-79"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 20px; top: 79px;" data-block-id="745448f86251c88ea79b7dbda1fd1805"><div class="sl-block-content" data-line-x1="-66" data-line-y1="0" data-line-x2="200" data-line-y2="0" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="266" height="1" viewbox="-66 0 266 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-66" y1="0" x2="200" y2="0"></line><line stroke="#000000" stroke-width="2" x1="-66" y1="0" x2="200" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 20px; top: 620px;" data-block-id="738fbd6bd7b89c53923840202868959c"><div class="sl-block-content" data-line-x1="-105" data-line-y1="199" data-line-x2="160" data-line-y2="200" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="265" height="1" viewbox="-105 199 265 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-105" y1="199" x2="160" y2="200"></line><line stroke="#000000" stroke-width="2" x1="-105" y1="199" x2="160" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 210px; left: 285px; top: 103px;" data-block-id="a66343a898e1aab2eeb122d7cb4d5b09"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(255, 255, 255);">
+<h2>Nand 1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 210px; left: 285px; top: 523px;" data-block-id="14a27fe2b481dca9df45e0fe22430b85"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; color: rgb(255, 255, 255);">
+<h2>Nand 2</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 161px; left: 640px; top: 486px;" data-block-id="e3d4e0269687c90a9cf2091e02a42251"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22;">
+<h2>0</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 161px; left: 640px; top: 66px;" data-block-id="b782162342ba2250ef22b50b78f0fd4a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23;">
+<h2>1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 147px;" data-block-id="8b4d1adb3215ecf10389402f55697459"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 26;">
+<h2>0</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 626px;" data-block-id="b4c2ac7b620788cd180b6901533627b6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24;">
+<h2>1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 5px;" data-block-id="08e532d748ff66e80bc5b3a62d25f2c8"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui" data-fragment-index="0">
+<h2>1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 490px;" data-block-id="7ca1aa3b1f743a2e61b791eaa44440be"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 27;">
+<h2>1</h2>
+</div></div></section><section data-id="fa25c0cbe398933ae7b8c7e8f7a39a84"><div class="sl-block" data-block-type="shape" style="width: 210px; height: 210px; left: 285px; top: 35px;" data-block-id="71dbf4e3e86e0a8ff32b9095bcc2eb53"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(217, 210, 233)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 210 210"><rect width="210" height="210" class="shape-element" fill="rgb(217, 210, 233)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 210px; height: 210px; left: 285px; top: 455px;" data-block-id="7a363dc324d8d1cca5b61245b46d8503"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(234, 209, 220)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 210 210"><rect width="210" height="210" class="shape-element" fill="rgb(234, 209, 220)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 495px; top: 140px;" data-block-id="daebbde5007e61087c3c57dce297a2c3"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="445" data-line-y2="200" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="445" height="1" viewbox="0 200 445 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="200" x2="445" y2="200"></line><line stroke="#b4a7d6" stroke-width="2" x1="0" y1="200" x2="445" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 495px; top: 560px;" data-block-id="5f9a88c5c0c049defe381a6a1a980337"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="445" data-line-y2="200" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="445" height="1" viewbox="0 200 445 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="200" x2="445" y2="200"></line><line stroke="#d5a6bd" stroke-width="2" x1="0" y1="200" x2="445" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 140px;" data-block-id="0f63d9a859c04ce15a0f0d4d442ebf43"><div class="sl-block-content" data-line-x1="-365" data-line-y1="350" data-line-x2="160" data-line-y2="0" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="525" height="350" viewbox="-365 0 525 350"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-365" y1="350" x2="160" y2="0"></line><line stroke="#b4a7d6" stroke-width="2" x1="-365" y1="350" x2="160" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 209px;" data-block-id="94927e6bbae3c4ac76cf359a09a84ebc"><div class="sl-block-content" data-line-x1="-435" data-line-y1="60" data-line-x2="90" data-line-y2="410" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 25;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="525" height="350" viewbox="-435 60 525 350"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-435" y1="60" x2="90" y2="410"></line><line stroke="#d5a6bd" stroke-width="2" x1="-435" y1="60" x2="90" y2="410"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 490px;" data-block-id="4f94f2f95b57ea25119e296c22b307bf"><div class="sl-block-content" data-line-x1="-126" data-line-y1="197" data-line-x2="80" data-line-y2="197" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="206" height="1" viewbox="-126 197 206 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-126" y1="197" x2="80" y2="197"></line><line stroke="#b4a7d6" stroke-width="2" x1="-126" y1="197" x2="80" y2="197"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 209px;" data-block-id="532bad01cc5284bff7fa0c2f48927d19"><div class="sl-block-content" data-line-x1="-425" data-line-y1="-79" data-line-x2="-220" data-line-y2="-79" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="205" height="1" viewbox="-425 -79 205 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-425" y1="-79" x2="-220" y2="-79"></line><line stroke="#d5a6bd" stroke-width="2" x1="-425" y1="-79" x2="-220" y2="-79"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 20px; top: 79px;" data-block-id="07b74fae5f9a32131a6d14f663996117"><div class="sl-block-content" data-line-x1="-66" data-line-y1="0" data-line-x2="200" data-line-y2="0" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="266" height="1" viewbox="-66 0 266 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-66" y1="0" x2="200" y2="0"></line><line stroke="#000000" stroke-width="2" x1="-66" y1="0" x2="200" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 20px; top: 620px;" data-block-id="f66c44acdf808a2e6475b8f103832841"><div class="sl-block-content" data-line-x1="-105" data-line-y1="199" data-line-x2="160" data-line-y2="200" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="265" height="1" viewbox="-105 199 265 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-105" y1="199" x2="160" y2="200"></line><line stroke="#000000" stroke-width="2" x1="-105" y1="199" x2="160" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 210px; left: 285px; top: 103px;" data-block-id="b178182e50629a3c9e9fac71fc31d06d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(255, 255, 255);">
+<h2>Nand 1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 210px; left: 285px; top: 523px;" data-block-id="c91b14bb495959a3014674a4f7924197"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; color: rgb(255, 255, 255);">
+<h2>Nand 2</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 161px; left: 640px; top: 486px;" data-block-id="1f63192d96424cec5a573e9ca3962052"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22;" data-fragment-index="2">
+<h2>1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 161px; left: 640px; top: 66px;" data-block-id="bbeebe5fb0f77fc590b5fbca40d37bd2"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23;" data-fragment-index="4">
+<h2>0</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 147px;" data-block-id="ec819a046746344d1c2a8912074b9572"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 26;" data-fragment-index="3">
+<h2>1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 626px;" data-block-id="83ce221c1fbb551173cf6a767346d31f"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24;" data-fragment-index="1">
+<h2>0</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 5px;" data-block-id="a023da162c6258adad9cb71258073e21"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui" data-fragment-index="0">
+<h2>1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 490px;" data-block-id="2614a57d909352f6b2e9dcc7186a02ef"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 27;" data-fragment-index="5">
+<h2>0</h2>
+</div></div></section><section data-id="5d1b546da14ed52377a69b7f3a057347"><div class="sl-block" data-block-type="shape" style="width: 210px; height: 210px; left: 285px; top: 35px;" data-block-id="b9746ac50edd4c489b9839811ee5b882"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(217, 210, 233)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 210 210"><rect width="210" height="210" class="shape-element" fill="rgb(217, 210, 233)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 210px; height: 210px; left: 285px; top: 455px;" data-block-id="8c442807aa499222a5d25960a6a0d4e6"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(234, 209, 220)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 210 210"><rect width="210" height="210" class="shape-element" fill="rgb(234, 209, 220)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 495px; top: 140px;" data-block-id="ccf6c70dda003ddd1b79c7b81c12461f"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="445" data-line-y2="200" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="445" height="1" viewbox="0 200 445 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="200" x2="445" y2="200"></line><line stroke="#b4a7d6" stroke-width="2" x1="0" y1="200" x2="445" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 495px; top: 560px;" data-block-id="7fc302480ce30da4b3f1ab87673826b2"><div class="sl-block-content" data-line-x1="0" data-line-y1="200" data-line-x2="445" data-line-y2="200" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="445" height="1" viewbox="0 200 445 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="200" x2="445" y2="200"></line><line stroke="#d5a6bd" stroke-width="2" x1="0" y1="200" x2="445" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 140px;" data-block-id="d40416fd7f797adfff5b3778b32692ac"><div class="sl-block-content" data-line-x1="-365" data-line-y1="350" data-line-x2="160" data-line-y2="0" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="525" height="350" viewbox="-365 0 525 350"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-365" y1="350" x2="160" y2="0"></line><line stroke="#b4a7d6" stroke-width="2" x1="-365" y1="350" x2="160" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 209px;" data-block-id="22fce3a43ecb8e5d3f2d470b573c98d5"><div class="sl-block-content" data-line-x1="-435" data-line-y1="60" data-line-x2="90" data-line-y2="410" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 25;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="525" height="350" viewbox="-435 60 525 350"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-435" y1="60" x2="90" y2="410"></line><line stroke="#d5a6bd" stroke-width="2" x1="-435" y1="60" x2="90" y2="410"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 490px;" data-block-id="5618fffd1187c3d39152ad90afe35e12"><div class="sl-block-content" data-line-x1="-126" data-line-y1="197" data-line-x2="80" data-line-y2="197" data-line-color="#b4a7d6" data-line-start-type="none" data-line-end-type="none" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="206" height="1" viewbox="-126 197 206 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-126" y1="197" x2="80" y2="197"></line><line stroke="#b4a7d6" stroke-width="2" x1="-126" y1="197" x2="80" y2="197"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 80px; top: 209px;" data-block-id="85094215610a8110d15e9078c4c50fbf"><div class="sl-block-content" data-line-x1="-425" data-line-y1="-79" data-line-x2="-220" data-line-y2="-79" data-line-color="#d5a6bd" data-line-start-type="none" data-line-end-type="none" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="205" height="1" viewbox="-425 -79 205 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-425" y1="-79" x2="-220" y2="-79"></line><line stroke="#d5a6bd" stroke-width="2" x1="-425" y1="-79" x2="-220" y2="-79"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 20px; top: 79px;" data-block-id="3d25fce6bdbbc5e6af5d7db8e0c01067"><div class="sl-block-content" data-line-x1="-66" data-line-y1="0" data-line-x2="200" data-line-y2="0" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="266" height="1" viewbox="-66 0 266 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-66" y1="0" x2="200" y2="0"></line><line stroke="#000000" stroke-width="2" x1="-66" y1="0" x2="200" y2="0"></line></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 20px; top: 620px;" data-block-id="20ab9d9bf002ac9a21e9e0d65c2d209a"><div class="sl-block-content" data-line-x1="-105" data-line-y1="199" data-line-x2="160" data-line-y2="200" data-line-color="#000000" data-line-start-type="none" data-line-end-type="none" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="265" height="1" viewbox="-105 199 265 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-105" y1="199" x2="160" y2="200"></line><line stroke="#000000" stroke-width="2" x1="-105" y1="199" x2="160" y2="200"></line></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 210px; left: 285px; top: 103px;" data-block-id="dea11c7d332f800315073713245f92e0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(255, 255, 255);">
+<h2>Nand 1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 210px; left: 285px; top: 523px;" data-block-id="e31ad78877ee9ec72fe3b852344a4223"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; color: rgb(255, 255, 255);">
+<h2>Nand 2</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 161px; left: 640px; top: 486px;" data-block-id="6a486db51657c2bbd593ab36c497c9ea"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22;">
+<h2>1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 161px; left: 640px; top: 66px;" data-block-id="9762f6160609fbc34188fe695cdb47ce"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23;">
+<h2>0</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 147px;" data-block-id="ca38a2033309a3ee2a1c38dd9f77dac8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 26;">
+<h2>1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 626px;" data-block-id="fa0fc5a8eccce633ce2a6e405050347a"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24;" data-fragment-index="0">
+<h2>1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 5px;" data-block-id="60e22c874a991f48f9f08b595dcc77c1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h2>1</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 230px; left: 12px; top: 490px;" data-block-id="8e86b6e18deb337302c1c134570ea181"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 27;">
+<h2>0</h2>
+</div></div></section><section data-id="c6e326c191c782fd507f708bc6470dc9"><div class="sl-block" data-block-type="code" style="width: 800px; height: 458px; left: 80px; top: 170px;" data-block-id="8f2ac19941cdacdbd313bf279567b9a2"><div class="sl-block-content" style="z-index: 10;"><pre class="java"><code>/**
+ * 1-bit register.
+ * If load[t]=1 then out[t+1] = in[t]
+ *              else out does not change (out[t+1]=out[t])
+ */
+
+CHIP Bit {
+    IN in, load;
+    OUT out;
+
+    PARTS:
+    DFF(in=muxout, out=ffout, out=out);
+    Mux(a=ffout, b=in, sel=load, out=muxout);
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 880px; left: 40px; top: 72px;" data-block-id="aa1f568f65d71495170432604514282e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h1>1 Bit Register In HDL!</h1>
+</div></div></section><section data-id="9f58746a875c6383a3e8e2befdc82f69"><div class="sl-block" data-block-type="code" style="width: 800px; height: 700px; left: 80px; top: 0px;" data-block-id="0eb39e13c63bded0e78ada88058c69a7"><div class="sl-block-content" style="z-index: 10; font-size: 79%;"><pre class="java"><code>/**
+ * 16-bit register
+ * If load[t]=1 then out[t+1] = in[t]
+ * else out does not change
+ */
+
+CHIP Register {
+    IN in[16], load;
+    OUT out[16];
+
+    PARTS:
+    Mux(a=dff0out, b=in[0], sel=load, out=dff0in);
+    DFF(in=dff0in, out=dff0out, out=out[0]);
+    Mux(a=dff1out, b=in[1], sel=load, out=dff1in);
+    DFF(in=dff1in, out=dff1out, out=out[1]);
+    Mux(a=dff2out, b=in[2], sel=load, out=dff2in);
+    DFF(in=dff2in, out=dff2out, out=out[2]);
+    Mux(a=dff3out, b=in[3], sel=load, out=dff3in);
+    DFF(in=dff3in, out=dff3out, out=out[3]);
+    Mux(a=dff4out, b=in[4], sel=load, out=dff4in);
+    DFF(in=dff4in, out=dff4out, out=out[4]);
+    Mux(a=dff5out, b=in[5], sel=load, out=dff5in);
+    DFF(in=dff5in, out=dff5out, out=out[5]);
+    Mux(a=dff6out, b=in[6], sel=load, out=dff6in);
+    DFF(in=dff6in, out=dff6out, out=out[6]);
+    Mux(a=dff7out, b=in[7], sel=load, out=dff7in);
+    DFF(in=dff7in, out=dff7out, out=out[7]);
+    Mux(a=dff8out, b=in[8], sel=load, out=dff8in);
+    DFF(in=dff8in, out=dff8out, out=out[8]);
+    Mux(a=dff9out, b=in[9], sel=load, out=dff9in);
+    DFF(in=dff9in, out=dff9out, out=out[9]);
+    Mux(a=dff10out, b=in[10], sel=load, out=dff10in);
+    DFF(in=dff10in, out=dff10out, out=out[10]);
+    Mux(a=dff11out, b=in[11], sel=load, out=dff11in);
+    DFF(in=dff11in, out=dff11out, out=out[11]);
+    Mux(a=dff12out, b=in[12], sel=load, out=dff12in);
+    DFF(in=dff12in, out=dff12out, out=out[12]);
+    Mux(a=dff13out, b=in[13], sel=load, out=dff13in);
+    DFF(in=dff13in, out=dff13out, out=out[13]);
+    Mux(a=dff14out, b=in[14], sel=load, out=dff14in);
+    DFF(in=dff14in, out=dff14out, out=out[14]);
+    Mux(a=dff15out, b=in[15], sel=load, out=dff15in);
+    DFF(in=dff15in, out=dff15out, out=out[15]);
+}</code></pre></div></div>
+</section><section data-id="3e387a9bee4dcd93a876a0d4229a471e"><div class="sl-block" data-block-type="code" style="width: 800px; height: 700px; left: 80px; top: 0px;" data-block-id="ac2cd9c99aa1d08588526e54994e20bf"><div class="sl-block-content" style="z-index: 10; font-size: 88%;"><pre class="java"><code>/**
+ * Memory of 8 registers, each 16 bit-wide. Out holds the value
+ * stored at the memory location specified by address. If load=1, then 
+ * the in value is loaded into the memory location specified by address 
+ * (the loaded value will be emitted to out after the next time step.)
+ */
+
+CHIP RAM8 {
+    IN in[16], load, address[3];
+    OUT out[16];
+
+    PARTS:
+    DMux8Way(in=true, sel=address, a=ls0, b=ls1, c=ls2, d=ls3, e=ls4, f=ls5, g=ls6, h=ls7);
+
+    And(a=load, b=ls0, out=load0); 
+    Register(in=in, load=load0, out=rout0);
+    And(a=load, b=ls1, out=load1);
+    Register(in=in, load=load1, out=rout1);
+    And(a=load, b=ls2, out=load2);
+    Register(in=in, load=load2, out=rout2);
+    And(a=load, b=ls3, out=load3);
+    Register(in=in, load=load3, out=rout3);
+    And(a=load, b=ls4, out=load4);
+    Register(in=in, load=load4, out=rout4);
+    And(a=load, b=ls5, out=load5);
+    Register(in=in, load=load5, out=rout5);
+    And(a=load, b=ls6, out=load6);
+    Register(in=in, load=load6, out=rout6);
+    And(a=load, b=ls7, out=load7);
+    Register(in=in, load=load7, out=rout7);
+   
+    Mux8Way16(a=rout0, b=rout1, c=rout2, d=rout3,
+    		       e=rout4, f=rout5, g=rout6, h=rout7,
+		       sel=address, out=out);
+}</code></pre></div></div>
+</section><section data-id="b8de8a7d38b805cf6b1e03040a4c2f51"><div class="sl-block" data-block-type="code" style="width: 800px; height: 700px; left: 80px; top: 0px;" data-block-id="f134a8db89ab2861bc6809963df17c12"><div class="sl-block-content" style="z-index: 10; font-size: 82%;"><pre class="java"><code>/**
+ * Memory of 64 registers, each 16 bit-wide. Out hold the value
+ * stored at the memory location specified by address. If load=1, then 
+ * the in value is loaded into the memory location specified by address 
+ * (the loaded value will be emitted to out after the next time step.)
+ */
+
+CHIP RAM64 {
+    IN in[16], load, address[6];
+    OUT out[16];
+
+    PARTS:
+    DMux8Way(in=true, sel=address[3..5], a=ls0, b=ls1, c=ls2, d=ls3, e=ls4, f=ls5, g=ls6, h=ls7);
+
+    And(a=load, b=ls0, out=load0);
+    RAM8(in=in, load=load0, address=address[0..2], out=rout0);
+    And(a=load, b=ls1, out=load1);
+    RAM8(in=in, load=load1, address=address[0..2], out=rout1);
+    And(a=load, b=ls2, out=load2);
+    RAM8(in=in, load=load2, address=address[0..2], out=rout2);
+    And(a=load, b=ls3, out=load3);
+    RAM8(in=in, load=load3, address=address[0..2], out=rout3);
+    And(a=load, b=ls4, out=load4);
+    RAM8(in=in, load=load4, address=address[0..2], out=rout4);
+    And(a=load, b=ls5, out=load5);
+    RAM8(in=in, load=load5, address=address[0..2], out=rout5);
+    And(a=load, b=ls6, out=load6);
+    RAM8(in=in, load=load6, address=address[0..2], out=rout6);
+    And(a=load, b=ls7, out=load7);
+    RAM8(in=in, load=load7, address=address[0..2], out=rout7);
+
+    Mux8Way16(a=rout0, b=rout1, c=rout2, d=rout3,
+    		       e=rout4, f=rout5, g=rout6, h=rout7,
+		       sel=address[3..5], out=out);
+}</code></pre></div></div>
+</section><section data-id="ebe1dae2a9a58051495721bf170c6fad"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 155px; height: auto;" data-block-id="0e0b481aaa542a9745ba25f91971a293"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Notice Anything Similar Between The DFF And Effectful Monads in Haskell?</h1>
+</div></div></section></section><section data-id="7b198b825bf03f1c641ceaa7b341fb36"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 40px; height: auto;" data-block-id="773a3b123c28044079f6827dcff4eeb4"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Resources</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 114px; height: auto;" data-block-id="2fc55d06a468b363d0377465db7d95df"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<ul>
+	<li>Nand 2 Tetris Website: http://nand2tetris.org/</li>
+	<li>Nand 2 Tetris Course: https://www.coursera.org/learn/build-a-computer</li>
+	<li>Haskell Book: http://haskellbook.com/</li>
+	<li>To Mock a Mockingbird by Raymond Smullyan: https://en.wikipedia.org/wiki/To_Mock_a_Mockingbird</li>
+	<li>Point Free or Die (amazing talk on ETA reduction by Amar Shah: https://www.youtube.com/watch?v=seVSlKazsNk</li>
+	<li>Digital Flip Flops by Robot Brigade: https://www.youtube.com/watch?v=NjO68wdbWyU</li>
+	<li>Introduction To Monoids by Julie Moronuki: https://www.youtube.com/watch?v=-mnA8_DWfik</li>
+	<li>Parsing with Applicative from Stephen Diehl: http://dev.stephendiehl.com/fun/002_parsers.html</li>
+</ul>
+</div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":1239477,"slug":"from-nand-to-lambda","title":"From NAND to Lambda","description":"","width":960,"height":700,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/284d18f3bba6ba99e4c134b5b6d61486/thumb.jpg?1525291493","view_count":0,"user":{"id":283769,"username":"ryanmoore","name":"Ryan Moore","description":null,"thumbnail_url":"https://lh5.googleusercontent.com/-6qYC88m_wnI/AAAAAAAAAAI/AAAAAAAAIl4/ttyopiDkwrs/photo.jpg?sz=50","paid":true,"pro":false,"lite":true,"team_id":null,"settings":{"id":109179,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"josefine","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":56,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1525298047455,"font_typekit":null,"font_google":null,"notes":{"402ec944c903a7665078dda1aea77b44":"There's this point just about everyone gets to when learning haskell where they can't help but say things like \"once you get to a certain point learning haskell you just start seeing monoids everywhere\", and I'd just like to take a sec to say... \n\nI think there's a joke in there somewhere.\n\n- monoids are about associative concatenation\n- binary arithmatic is concatenation of numbers\n- if we can represent binary arith as boolean logic, we know there must be a boolean monoid that corresponds\n- Let's take a look! ","eef7c4b839c5ef84d846f1c397620265":"implement Voltage sum data type\n\nthen\n\nimplement nand in haskell\n- start with truth table version\n- then slim down with _ _ = High","71091d8c7a984534c075fe10a571c23a":"CombinatoryBoolean.hs source file\n\nimplement not' with truth table first\nnot' High = Low\nnot' Low  = High\n\nthen redo with nand\n\nnot' x = nand x x","3b405baffdf5edd3c03cff1d35c2add7":"implement and in terms of not' nand\n\nand' x y = not'  (nand x y)\n\nshow $ function application operator\n\nand' x y = not' $ nand x y\n\n","be9df98d13bab7446c7ecabe44a84336":"implement and with blackbird\n\n(...) :: (a -\u003e b) -\u003e (a -\u003e b -\u003e b) -\u003e b \n\nso \n\nand :: Voltage -\u003e Voltage -\u003e Voltage\nand = (not ... nand)","c2353f65a36a0083992669330139d079":"show monoid instances for Xor and And\n\nshow how mempty works with mappend, always giving back whatever is passed to it","1b5fc9a97777968b10db5f8474c92644":"implement half adder with monoids!\n\nhalfAdder x y = (sum, carry)\n  where\n    Xor sum = Xor x \u003c\u003e Xor y\n    And carry = And x \u003c\u003e And y","3df0da3c75d959a0b8807838759fc4b9":"diff between half and full adder, full takes 3 operandds, its two bits plus the previous carry","8f184631303eec02d871153629118418":"implement full adder with two calls to halfAdder and then an Or monoid\n\nfullAdder x y z =\n  (sum, carry)\n      where\n        (sum1, carry1) = halfAdder x y\n        (sum, carry2) = halfAdder sum1 z\n        Or carry = Or carry1 \u003c\u003e Or carry2","460200303bd297ee3c9416766e254c07":"joke about how in every functional, declarative language EVENTUALLY you get tired of composing and need to actually get stuff done with effects and state.","60f2bcfbfcefc541c9a731e043e5f143":"Talk about how weird it is to wire a boolean combinatory ciruits output back into the input of another and vice versa","3688ae00bc92a227b701f6c50217fa38":"Normally these are used in a way that both start at 1, but this doesn't give us enough information to tell us what the outputs will be.","49e6f057e2e0a43d20e088b426101319":"If the first bit switches from 0 to 1 the chip is still stable, but notice that we now have the beginning of memory, or state,\n\nthe output of nand2 remembers the last input of nand1 - 0!"}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/head.min.js"></script>
+		<script src="lib/reveal.min.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+
+				controls: true,
+				progress: true,
+				history: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+
+				autoSlide: 0 || 0,
+				autoSlideStoppable: true,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				dependencies: [
+					{ src: 'lib/reveal-plugins/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/highlight/highlight.js', async: true, callback: function() { hljs.initHighlighting(); hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/reveal-plugins/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
