@@ -13,12 +13,15 @@ import FullAdder
 first = [High, High, High, Low, Low, High, Low, Low, Low, High]
 second = [High, Low, Low, Low, Low, Low, Low, Low, Low, Low ]
 
+makeInt :: Voltage -> Int
+makeInt High = 1
+makeInt Low = 1
 add16 f s =
   let
     ((x, y) : xs) = zip f s
     (s1, c1) = halfAdder x y
   in
-    go [s1] c1 xs
+    fmap makeInt $ go [s1] c1 xs
   where
     go result _ [] = reverse result
     go result c ((x, y) : xs) = go (sum : result) carry xs
